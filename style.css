@@ -1,0 +1,175 @@
+
+/* Body */
+
+body {
+  background-color: #F5F0E8;
+  font-family: "Cormorant Garamond", serif;
+  color: #4A382B;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Main container */
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+}
+
+/* Cards */
+
+.card {
+  background-color: #FBF8F3;
+  padding: 30px;
+  margin-bottom: 25px;
+  border: 1px solid #80664F;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(74, 56, 43, 0.08);
+}
+
+/* First card: profile */
+
+.card-profile {
+  border: 2px solid #80664F;
+}
+
+/* Text alignment */
+
+.text-center {
+  text-align: center;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: #4A382B;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 23px;
+  font-style: italic;
+  color: #8A7059;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Profile image */
+
+.img-circle {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #D6C2AA;
+  margin-top: 15px;
+}
+
+/* Button */
+
+.btn {
+  display: inline-block;
+  background-color: #80664F;
+  color: #FBF8F3;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.btn:hover {
+  background-color: #4A382B;
+}
+
+/* Links */
+
+a {
+  color: #80664F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4A382B;
+}
+
+/* Inline social links */
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.list-inline i {
+  font-size: 28px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+}
+
+/* SMOOTH TRANSITIONS */
+
+@media (prefers-reduced-motion: no-preference) {
+  a {
+    transition: color 0.3s ease;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 720px) {
+  .container {
+    width: 90%;
+  }
+
+  .card {
+    padding: 25px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 540px) {
+  .container {
+    width: auto;
+    margin: 20px 15px;
+  }
+
+  .card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  .img-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .list-inline > li {
+    padding: 0 10px;
+  }
+}
